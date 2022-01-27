@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dongle", sans-serif;
+}
+
+/* Header */
+header {
+  background-color: black;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* text-align: center; */
+}
+
+header h1 {
+  font-size: 100px;
+  color: white;
+  font-weight: lighter;
+  text-shadow: 0 0 20px #ffffff;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: white;
+  font-size: 80px;
+  color: white;
+  font-weight: lighter;
+  text-shadow: 2px 2px 20px #1a0ce4;
+}
+
+.navBar li {
+  list-style-type: none;
+}
+
+/* Showcase */
+.showcase {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.diveinBtn {
+  width: 40%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-radius: 100px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+
+.diveinBtn img {
+  /* border: red solid 2px; */
+  margin-top: 20px;
+}
+
+.centerLine {
+  font-size: 60px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.diveinBtn:hover {
+  background-color: rgb(0, 255, 255);
+  border: none;
+  transition: 0.5s;
+}
+
+.diveinBtn a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Counter */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 20px;
+  /* border: solid red 5px; */
+  /* height: 80vh; */
+  /* width: 90%; */
+  margin: auto;
+  gap: 50px;
+  /* justify-items: center; */
+}
+
+.ctr {
+  /* width: 90%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: pink; */
+}
+.ctrBtn {
+  background: none;
+  border-radius: 30px;
+  padding: 10px;
+  outline: none;
+  width: 100px;
+  cursor: pointer;
+}
+.ctrBtn:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 1s;
+}
+.ctr input {
+  padding: 5px;
+  font-size: 30px;
+}
+
+.value {
+  font-size: 80px;
+  /* border: solid 2px black; */
+  width: 100px;
+  text-align: center;
+}
+
+.btnPanel {
+  display: flex;
+  flex-direction: row;
+}
+
+.ctrBtn {
+  font-size: 30px;
+  margin: 10px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 718px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .ctr {
+    /* margin-bottom: 10px; */
+    border-top: black 2px solid;
+    padding-top: 10px;
+  }
+}
