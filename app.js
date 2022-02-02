@@ -85,7 +85,7 @@ dec2.addEventListener("click", function () {
 
 // Resetting value
 res2.addEventListener("click", function () {
-  value1.innerHTML = "0";
+  value2.innerHTML = "0";
   const value = parseInt(value2.textContent, 10);
   if (value < 0) {
     value2.style.color = "red";
